@@ -1,0 +1,1 @@
+docker run --rm -v $(pwd):/app --env NPM_CONFIG_REGISTRY=https://registry.npm.taobao.org/ react-cli npx create-react-app my-app --template typescript
