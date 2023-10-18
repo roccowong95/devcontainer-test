@@ -39,3 +39,14 @@ export const updateTodo = async (todo: ITodo): Promise<AxiosResponse<ApiDataType
         throw new Error(error)
     }
 }
+
+export const deleteTodo = async (_id: string): Promise<AxiosResponse<ApiDataType>> => {
+    try {
+        const deletedTodo: AxiosResponse<ApiDataType> = await axios.delete(
+            `${baseURL}/delete-todo/${_id}`
+        )
+        return deletedTodo
+    } catch (error: any) {
+        throw new Error(error)
+    }
+}

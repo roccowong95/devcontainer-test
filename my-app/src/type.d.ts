@@ -15,7 +15,7 @@ interface TodoProps {
     todo: ITodo
 }
 
-type ApiDataType = {
+interface ApiDataType {
     message: string
     status: string
     todos: ITodo[]
